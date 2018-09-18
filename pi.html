@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Pi</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <div class="row">
+                    <a class="navbar-brand" href="#">Sensors and actuators</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <table class="table">
+                <tr>
+                    <td>Temperature:</td>
+                    <td id="temperature">Unknown</td>
+                </tr>
+                <tr>
+                    <td>Humidity:</td>
+                    <td id="humidity">Unknown</td>
+                </tr>
+                <tr>
+                    <td>LEDs:</td>
+                    <td>
+                        <div id="led1" class="led btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-outline-danger">
+                                <input type="radio" name="led1" class="on" autocomplete="off"> On
+                            </label>
+                            <label class="btn btn-outline-secondary active">
+                                <input type="radio" name="led1" class="off" autocomplete="off" checked> Off
+                            </label>
+                        </div>
+                        <div id="led2" class="led btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-outline-primary">
+                                <input type="radio" name="led2" class="on" autocomplete="off"> On
+                            </label>
+                            <label class="btn btn-outline-secondary active">
+                                <input type="radio" name="led2" class="off" autocomplete="off" checked> Off
+                            </label>
+                        </div>
+                        <div id="led3" class="led btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-outline-success">
+                                <input type="radio" name="led3" class="on" autocomplete="off"> On
+                            </label>
+                            <label class="btn btn-outline-secondary active">
+                                <input type="radio" name="led3" class="off" autocomplete="off" checked> Off
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
